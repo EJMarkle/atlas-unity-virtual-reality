@@ -8,4 +8,7 @@ public class HandAnimator : MonoBehaviour
 {
     public InputActionProperty pinchAnimationAction;
     
+    
 }
+
+
