@@ -9,11 +9,13 @@ public class BulletMaker : MonoBehaviour
     public GameObject bullet;
     public Transform spawnPoint;
     public float fireSpeed = 20;
+    public AudioSource bulletsound;
 
     void Start()
     {
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
+        bulletsound = GetComponent<AudioSource>();
     }
 
     public void FireBullet(ActivateEventArgs arg)
@@ -21,6 +23,12 @@ public class BulletMaker : MonoBehaviour
         GameObject spawnedBullet = Instantiate(bullet);
         spawnedBullet.transform.position = spawnPoint.position;
         spawnedBullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * fireSpeed;
+        BulletSound();
         Destroy(spawnedBullet, 5);
+    }
+
+    public void BulletSound()
+    {
+        bulletsound.Play();
     }
 }
