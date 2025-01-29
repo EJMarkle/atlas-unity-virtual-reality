@@ -7,16 +7,13 @@ using UnityEngine.UI;
 using TMPro;
 
 
+// Handles main menu buttons
 public class MenuManager : MonoBehaviour
 {
     public GameObject menu;
     public InputActionProperty showButton;
     public TMP_Dropdown sceneDropdown;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(menu);
-    }
     
     void Update()
     {
@@ -27,10 +24,13 @@ public class MenuManager : MonoBehaviour
         
     }
 
+    // Quit button functionality
     public void Quit()
     {
         Application.Quit();
     }
+
+    // Load Video button functionality, switches to scene w appropriate video player
     public void PlaySelectedScene()
     {
         int selectedIndex = sceneDropdown.value;
