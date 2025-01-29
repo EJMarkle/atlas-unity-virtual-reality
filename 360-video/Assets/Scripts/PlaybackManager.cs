@@ -17,6 +17,9 @@ public class PlaybackManager : MonoBehaviour
     public Sprite speed0_5xSprite;
     private PlaybackSpeed currentSpeed = PlaybackSpeed.Speed1x;
 
+    public Animator skipForwardAnimator;
+    public Animator skipBackAnimator;
+
 
     // Enum for playback speeds
     public enum PlaybackSpeed
@@ -82,6 +85,7 @@ public class PlaybackManager : MonoBehaviour
         if (videoPlayer != null)
         {
             videoPlayer.time += 15f;
+            PlaySkipAnimation(skipForwardAnimator);
         }
     }
 
@@ -92,6 +96,7 @@ public class PlaybackManager : MonoBehaviour
         {
             videoPlayer.time -= 15f;
             if (videoPlayer.time < 0) videoPlayer.time = 0;
+            PlaySkipAnimation(skipBackAnimator);
         }
     }
 
@@ -161,6 +166,15 @@ public class PlaybackManager : MonoBehaviour
             case PlaybackSpeed.Speed0_5x:
                 buttonImage.sprite = speed0_5xSprite;
                 break;
+        }
+    }
+
+    // Animation player helper function
+    private void PlaySkipAnimation(Animator animator)
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("PlayAnimation");
         }
     }
 

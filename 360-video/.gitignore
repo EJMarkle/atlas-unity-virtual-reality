@@ -11,10 +11,7 @@
 /[Aa]ssets/Images/
 
 
-/[Pp]ackages/*
-!/[Pp]ackages/manifest.json
-!/[Pp]ackages/projectDependencies.json
-!/[Pp]ackages/packages-lock.json
+/Assets/[Pp]ackages/*
 
 /license.md
 # MemoryCaptures can get excessive in size
