@@ -1,1 +1,1 @@
-VR Avatar Control and Motion Capture
+A simple rigged VR avatar using ReadyPlayerMe and the XR Interaction Toolkit.
