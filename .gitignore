@@ -27,6 +27,10 @@
 
 # Visual Studio cache directory
 .vs/
+/intro-to-vr/
+/VR-Demo-master/
+/avatar-motion/
+/pose-emote/
 
 # Gradle cache directory
 .gradle/
