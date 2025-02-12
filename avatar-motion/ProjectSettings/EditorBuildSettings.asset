@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/AvatarControl.unity
     guid: eb6cb829554dd4341a5d65104735d179
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4997a8e6675b6dc4b96f3966300e1c8f, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ead0ec83128173942ad457e4a693a645, type: 2}
   m_UseUCBPForAssetBundles: 0

@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 4939c3242f3a0414e9c71da3ee3be6bf
+  productGUID: 3c165fac506a78b4b865cac1d4d3a286
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: pose-emote
+  productName: avatar-motion
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -141,7 +141,10 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  - {fileID: 7205903739154421159, guid: 4997a8e6675b6dc4b96f3966300e1c8f, type: 2}
+  - {fileID: -6279769462042015731, guid: ead0ec83128173942ad457e4a693a645, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -796,7 +799,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:RPMTemplate
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
@@ -816,7 +819,24 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: READY_PLAYER_ME;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    EmbeddedLinux: READY_PLAYER_ME
+    GameCoreScarlett: READY_PLAYER_ME
+    GameCoreXboxOne: READY_PLAYER_ME
+    LinuxHeadlessSimulation: READY_PLAYER_ME
+    Nintendo Switch: READY_PLAYER_ME
+    PS4: READY_PLAYER_ME
+    PS5: READY_PLAYER_ME
+    QNX: READY_PLAYER_ME
+    ReservedCFE: READY_PLAYER_ME
+    Standalone: READY_PLAYER_ME;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    VisionOS: READY_PLAYER_ME
+    WebGL: READY_PLAYER_ME
+    Windows Store Apps: READY_PLAYER_ME;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    XboxOne: READY_PLAYER_ME
+    iPhone: READY_PLAYER_ME
+    tvOS: READY_PLAYER_ME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -837,14 +857,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: pose-emote
+  metroPackageName: avatar-motion
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: pose-emote
+  metroApplicationDescription: avatar-motion
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -915,10 +935,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 6f22f34e-4bbb-43ca-afe6-afb03f578c09
+  cloudProjectId: 77526b27-267f-42d6-8ade-01b5ed076e0e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: pose-emote
+  projectName: avatar-motion 2025-02-04_14-23-49
   organizationId: evan-markle
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
