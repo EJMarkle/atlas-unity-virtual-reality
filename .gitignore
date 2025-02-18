@@ -1,4 +1,5 @@
 # Ignore Library, Temp, and other auto-generated folders
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -6,6 +7,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+
 
 /[Pp]ackages/*
 !/[Pp]ackages/manifest.json
